@@ -1,5 +1,5 @@
 import React from 'react';
-import { Second, Points, CryptoMain } from '@/features';
+import { Second, Points, CryptoMain, NotTraidng, Earning, InstallWallet, BuyCrypto, Steps, Security, Marketing} from '@/features';
 
 
 const Index = () => {
@@ -8,6 +8,13 @@ const Index = () => {
       <Second />
       <Points />
       <CryptoMain />
+      <NotTraidng />
+      <Earning />
+      <InstallWallet />
+      <BuyCrypto />
+      <Steps />
+      <Security />
+      <Marketing />
     </div>
   )
 }

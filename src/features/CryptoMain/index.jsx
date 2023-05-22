@@ -11,7 +11,7 @@ export const CryptoMain = () => {
   const info = [
     {
       title: 'Autonomy',
-      desc: 'No one can "shut down" the blockchain or ban cryptocurrency.',
+      desc: 'No one can "shut down" the blockchain or ban cryptocurrency.'
     },
     {
       title: 'Accessibility',
@@ -33,18 +33,21 @@ export const CryptoMain = () => {
         {info.map((item, itemIndex) => {
           return (
             <div className="flex flex-col items-center flex-1 space-y-10">
-              <span className="text-3xl">0{itemIndex+1}</span>
+              <span className="text-6xl">0{itemIndex+1}</span>
               <div className="h-full flex flex-col items-center text-center p-10 cryptoMain-card-bg rounded-[30px] space-y-10" key={itemIndex}>
-                <span className="text-xl">{item?.title}</span>
+                <span className="text-xl font-montserrat-alternates">{item?.title}</span>
                 <span className="text-sm opacity-50">{item?.desc}</span>
               </div>
             </div>
           )
         })}
       </div>
-      <div className="flex flex-col">
-        <span>And that is just a part of the advantages! You can learn more about cryptocurrency in this article</span>
-        <button></button>
+      <div className="flex flex-col mt-[60px]  space-y-5 items-center">
+        <span className="opacity-50">And that is just a part of the advantages! You can learn more about cryptocurrency in this article</span>
+        <button className="border border-white rounded-[10px] px-6 py-1.5 flex items-center justify-center space-x-3">
+          <span>About</span>
+          <img className="w-[7px]" src="/icons/arrowRIght.svg" />
+        </button>
       </div>
     </div>
   )
